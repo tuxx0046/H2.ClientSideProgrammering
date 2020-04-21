@@ -1,3 +1,5 @@
+<?php require "includes/createdata.inc.php"; ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -13,8 +15,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐘</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐘</text></svg>">
 
     <title>The Animal Life</title>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
@@ -38,7 +39,6 @@
                 </a>
             </div>
         </nav>
-
         <div class="hero-text-box">
             <h1>Goodbye human life.<br />Hello animal life.</h1>
             <a class="btn btn-full js--scroll-to-form" href="#">Turn me into an animal!</a>
@@ -49,7 +49,7 @@
     <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Don't dream about it &mdash; become it!</h2>
-            <p class="long-copy">Hi, we are The Wild Life, and we offer you an alternative way to live. That's right,
+            <p class="long-copy">Hi, we are The Animal Life, and we offer you an alternative way to live. That's right,
                 you can now become a real beast. Do you have what it takes to drop your tie and your suitcase and start
                 a new life as an animal?</p>
         </div>
@@ -152,7 +152,7 @@
                 on how to live your future life. We'll make sure to get in touch with you when our labs are ready.</p>
         </div>
         <div class="row">
-            <form method="post" action="#" class="contact-form">
+            <form method="post" action="index.php#signup" class="contact-form" autocomplete="off">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Name</label>
@@ -183,9 +183,9 @@
                     </div>
                     <div class="col span-2-of-3">
                         <select name="gender" id="gender">
-                            <option>Woman</option>
-                            <option>Man</option>
-                            <option selected>Other</option>
+                            <option value="Woman">Woman</option>
+                            <option value="Man">Man</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                 </div>
@@ -202,10 +202,9 @@
                         <label>&nbsp;</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="submit" value="Send">
+                        <input type="submit" name="submit" value="Send">
                     </div>
                 </div>
-
             </form>
         </div>
     </section>
@@ -217,7 +216,7 @@
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Research</a></li>
                     <li><a href="#">Ethics</a></li>
-                    <li><a href="#">Aftercare</a></li>
+                    <li><a href="customers.php">Customer data</a></li>
                 </ul>
             </div>
             <div class="col span-1-of-2">

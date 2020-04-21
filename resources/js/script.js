@@ -63,6 +63,8 @@ $(document).ready(function () {
             }
         });
 
+    $("h1").addClass("animated fadeInUp");
+
 
     // Animations on scroll https://daneden.github.io/animate.css/
     $(".js--animate-features").waypoint(function () {
